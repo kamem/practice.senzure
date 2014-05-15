@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@import "import";
+
+$tabBorderColor : #a3c5ff;
+$btnColor : #00af47;
+
+
+h1 {
+	margin: 1em;
+}
+
+#tab {
+	margin: 2em;
+	.nav {
+		position: relative;
+		clear: both;
+		@extend .clearfix;
+		li {
+			border: 1px solid $tabBorderColor;
+			border-bottom: none;
+			margin-bottom: -1px;
+			margin-right: 5px;
+			padding: 0.3em 1em;
+			float: left;
+			display: inline;
+			background: #fff;
+			
+			@include border-radius(6px 6px 0 0);
+			&.on {
+				background: $tabBorderColor;
+				color: #fff;
+			}
+		}
+	}
+
+	.content {
+		clear: both;
+		
+		.section {
+			border: 1px solid $tabBorderColor;
+			padding: 1em;
+			display: none;
+			@include border-radius(0 6px 6px 6px);
+		}
+		
+		.on {
+			display: block;
+		}
+	}
+	
+	.nextBack {
+		margin: 1em 0;
+		@extend .clearfix;
+		li {
+			padding: 0.3em 1em;
+			background: $btnColor;
+			color: #fff;
+			@include border-radius(10px);
+			&.next {
+				float: right;
+			}
+			&.back {
+				float: left;
+			}
+		}
+	}
+}
+
+@include clearfix();
