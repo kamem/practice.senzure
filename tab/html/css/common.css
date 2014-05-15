@@ -1,96 +1,80 @@
-@charset "utf-8";
 h1 {
-	margin: 1em;
+  margin: 1em;
 }
 
 #tab {
-	margin: 2em;
+  margin: 2em;
 }
-
 #tab .nav {
-	position: relative;
-	clear: both;
+  position: relative;
+  clear: both;
 }
-
 #tab .nav li {
-	border: 1px solid #a3c5ff;
-	border-bottom: none;
-	margin-bottom: -1px;
-	margin-right: 5px;
-	padding: 0.3em 1em;
-	float: left;
-	display: inline;
-	background: #fff;
-	-webkit-border-radius: 6px 6px 0 0;
-	-moz-border-radius: 6px 6px 0 0;
-	-o-border-radius: 6px 6px 0 0;
-	-ms-border-radius: 6px 6px 0 0;
-	border-radius: 6px 6px 0 0;
+  border: 1px solid #a3c5ff;
+  border-bottom: none;
+  margin-bottom: -1px;
+  margin-right: 5px;
+  padding: 0.3em 1em;
+  float: left;
+  display: inline;
+  background: #fff;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
 }
-
 #tab .nav li.on {
-	background: #a3c5ff;
-	color: #fff;
+  background: #a3c5ff;
+  color: #fff;
 }
-
 #tab .content {
-	clear: both;
+  clear: both;
 }
-
 #tab .content .section {
-	border: 1px solid #a3c5ff;
-	padding: 1em;
-	display: none;
-	-webkit-border-radius: 0 6px 6px 6px;
-	-moz-border-radius: 0 6px 6px 6px;
-	-o-border-radius: 0 6px 6px 6px;
-	-ms-border-radius: 0 6px 6px 6px;
-	border-radius: 0 6px 6px 6px;
+  border: 1px solid #a3c5ff;
+  padding: 1em;
+  display: none;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  -o-border-radius: 0 6px 6px 6px;
+  -ms-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
 }
-
 #tab .content .on {
-	display: block;
+  display: block;
 }
-
 #tab .nextBack {
-	margin: 1em 0;
+  margin: 1em 0;
 }
-
 #tab .nextBack li {
-	padding: 0.3em 1em;
-	background: #00af47;
-	color: #fff;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-o-border-radius: 10px;
-	-ms-border-radius: 10px;
-	border-radius: 10px;
+  padding: 0.3em 1em;
+  background: #00af47;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
 }
-
 #tab .nextBack li.next {
-	float: right;
+  float: right;
 }
-
 #tab .nextBack li.back {
-	float: left;
+  float: left;
 }
 
 /*----------------------------------------
 	clearfix
 ----------------------------------------*/
-.clearfix,
-#tab .nav,
-#tab .nextBack {
-	min-height: 1px;
-	_height: 1%;
+.clearfix, #tab .nav, #tab .nextBack {
+  min-height: 1px;
+  _height: 1%;
 }
-
-.clearfix:after,
-#tab .nav:after,
-#tab .nextBack:after {
-	content: ".";
-	display: block;
-	clear: both;
-	height: 0;
-	visibility: hidden;
+.clearfix:after, #tab .nav:after, #tab .nextBack:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
